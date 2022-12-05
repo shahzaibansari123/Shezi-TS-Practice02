@@ -10,6 +10,8 @@
 // -----------------------------------------------
 
 
+//function binding method
+
 const button = document.querySelector("button")!
 
 function log(data : string){
@@ -17,6 +19,6 @@ function log(data : string){
    
 }
 
-button.addEventListener('click', log)
+button.addEventListener('click', log.bind(null, 'pressed')
 
 //log("hello")
