@@ -12,10 +12,10 @@
 
 const button = document.querySelector("button")!
 
-function log(data){
-    console.log("Clicked")
+function log(data : string){
+    console.log("Clicked" + data)
    
 }
 
 
-log("hello")
+//log("hello")
