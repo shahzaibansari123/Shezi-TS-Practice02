@@ -17,5 +17,6 @@ function log(data : string){
    
 }
 
+button.addEventListener('click', log)
 
 //log("hello")
