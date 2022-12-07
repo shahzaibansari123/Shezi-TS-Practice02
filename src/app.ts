@@ -11,14 +11,19 @@
 
 
 //function binding method
+//...
+// const button = document.querySelector("button")!
 
-const button = document.querySelector("button")!
-
-function log(data : string){
-    console.log("Clicked" + data)
+// function log(data : string){
+//    console.log("Clicked" + data)
    
-}
+// }
 
-button.addEventListener('click', log.bind(null, 'pressed')
-
+// button.addEventListener('click', log.bind(null, 'pressed')
+//...
 //log("hello")
+ 
+
+//.......................................
+
+//Classes
