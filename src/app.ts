@@ -28,6 +28,11 @@
 
 //Classes
 
-clacss Student {
+class Student {
+   name: string;
+   rollNo: string;
    
+   constructor (){
+      
+      }
    }
