@@ -30,9 +30,9 @@
 
 class Student {
    name: string;
-   rollNo: string;
+   rollNo: number;
    
-   constructor (){
+   constructor (n: string , rN: number){
       
       }
    }
