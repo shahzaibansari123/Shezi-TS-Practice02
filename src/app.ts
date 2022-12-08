@@ -33,6 +33,7 @@ class Student {
    rollNo: number;
    
    constructor (n: string , rN: number){
-      
+      this.name = n;
+      this.rollNo= rN;
       }
    }
