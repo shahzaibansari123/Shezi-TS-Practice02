@@ -39,4 +39,5 @@ class Student {
    }
 
 
-const student1 = new Student()
+const student1 = new Student("Shahzaib", 249)
+console.log(student1)
