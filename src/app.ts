@@ -37,3 +37,6 @@ class Student {
       this.rollNo= rN;
       }
    }
+
+
+const student1 = new Student()
