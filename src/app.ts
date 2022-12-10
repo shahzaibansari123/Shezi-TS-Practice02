@@ -31,6 +31,12 @@
 class Student {
    name: string;
    rollNo: number;
+   skills: string[]=[];
+
+
+
+
+ 
    
    constructor (n: string , rN: number){
       this.name = n;
