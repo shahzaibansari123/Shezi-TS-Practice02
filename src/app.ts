@@ -37,11 +37,18 @@ class Student {
 
 
  
-   
+
    constructor (n: string , rN: number){
       this.name = n;
       this.rollNo= rN;
       }
+   
+   
+
+
+addSkills(skill: string){
+this.skill.push(skill)
+}
    }
 
 
