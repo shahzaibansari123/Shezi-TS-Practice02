@@ -53,5 +53,5 @@ this.skill.push(skill)
 
 
 const student1 = new Student("Shahzaib", 249)
-Student.addSkills()
+Student.addSkills("Software")
 console.log(student1)
