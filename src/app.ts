@@ -27,14 +27,15 @@
 //Classes
 
 class Student {
-  name: string;
-  rollNo: number;
-  private skills: string[] = [];
+  // name: string;
+  // rollNo: number;
+  // private skills: string[] = [];
 
-  constructor(n: string, rN: number) {
-    this.name = n;
-    this.rollNo = rN;
-  }
+  // constructor(n: string, rN: number) {
+  //   this.name = n;
+  //   this.rollNo = rN;
+  // }
+
 
   addSkills(skill: string) {
     this.skills.push(skill);
