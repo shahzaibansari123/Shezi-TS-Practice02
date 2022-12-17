@@ -40,7 +40,9 @@ class Student {
     this.skills.push(skill);
   }
 
-  
+  getSkills(){
+    return this.skills;
+  }
 }
 
 const student1 = new Student("Shahzaib", 249);

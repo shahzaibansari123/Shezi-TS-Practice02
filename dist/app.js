@@ -25,6 +25,9 @@ class Student {
     addSkills(skill) {
         this.skills.push(skill);
     }
+    getSkills() {
+        return this.skills;
+    }
 }
 const student1 = new Student("Shahzaib", 249);
 student1.addSkills("Software");
