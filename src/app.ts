@@ -49,3 +49,4 @@ const student1 = new Student("Shahzaib", 249);
 student1.addSkills("Software");
 
 console.log(student1);
+console.log(student1.getSkills());
