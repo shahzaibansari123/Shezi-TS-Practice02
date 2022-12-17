@@ -29,7 +29,7 @@
 class Student {
   name: string;
   rollNo: number;
-  skills: string[] = [];
+  private skills: string[] = [];
 
   constructor(n: string, rN: number) {
     this.name = n;
@@ -39,8 +39,11 @@ class Student {
   addSkills(skill: string) {
     this.skills.push(skill);
   }
+
+  
 }
 
 const student1 = new Student("Shahzaib", 249);
 student1.addSkills("Software");
+
 console.log(student1);
