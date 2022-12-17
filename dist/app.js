@@ -17,13 +17,20 @@
 //.......................................
 //Classes
 class Student {
-    // name: string;
-    // rollNo: number;
-    // private skills: string[] = [];
-    // constructor(n: string, rN: number) {
-    //   this.name = n;
-    //   this.rollNo = rN;
-    // }
+    constructor(name, rollNumber) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        // name: string;
+        // rollNo: number;
+        // private skills: string[] = [];
+        // constructor(n: string, rN: number) {
+        //   this.name = n;
+        //   this.rollNo = rN;
+        // }
+        // below is shorthand initialization- a technique provided by TS itself
+        this.skills = [];
+    }
+    // ---------------------------------------------
     addSkills(skill) {
         this.skills.push(skill);
     }

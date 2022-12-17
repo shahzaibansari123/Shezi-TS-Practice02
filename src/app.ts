@@ -36,12 +36,19 @@ class Student {
   //   this.rollNo = rN;
   // }
 
+  // below is shorthand initialization- a technique provided by TS itself
+
+  private skills: string[] = [];
+
+  constructor(public name: string, public rollNumber: number) {}
+
+  // ---------------------------------------------
 
   addSkills(skill: string) {
     this.skills.push(skill);
   }
 
-  getSkills(){
+  getSkills() {
     return this.skills;
   }
 }
