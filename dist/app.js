@@ -40,6 +40,7 @@ class Student {
 class Volunteer extends Student {
     constructor(name, rollNumber) {
         super(name, rollNumber);
+        this.canVolunteerIn = [];
     }
 }
 const student1 = new Student("Shahzaib", 249);

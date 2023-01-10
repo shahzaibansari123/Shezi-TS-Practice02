@@ -52,6 +52,9 @@ class Student {
 }
 
 class Volunteer extends Student {
+
+  canVolunteerIn: string[] = [];
+  
   constructor(name: string, rollNumber: number) {
     super(name, rollNumber);
   }
