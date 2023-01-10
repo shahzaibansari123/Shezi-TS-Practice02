@@ -52,7 +52,9 @@ class Student {
 }
 
 class Volunteer extends Student {
-
+  constructor(name: string, rollNumber: number) {
+    super(name, rollNumber);
+  }
 }
 
 const student1 = new Student("Shahzaib", 249);

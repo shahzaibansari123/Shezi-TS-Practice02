@@ -38,6 +38,9 @@ class Student {
     }
 }
 class Volunteer extends Student {
+    constructor(name, rollNumber) {
+        super(name, rollNumber);
+    }
 }
 const student1 = new Student("Shahzaib", 249);
 student1.addSkills("Software");
