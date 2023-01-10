@@ -55,6 +55,7 @@ class Student {
 
 const student1 = new Student("Shahzaib", 249);
 student1.addSkills("Software");
+// student1.addSkills("Javascript");
 
 console.log(student1);
 console.log(student1.getSkills());
