@@ -42,8 +42,6 @@ class Student {
 
   constructor(public name: string, public rollNumber: number) {}
 
-  // ---------------------------------------------
-
   addSkills(skill: string) {
     this.skills.push(skill);
   }
@@ -51,6 +49,10 @@ class Student {
   getSkills() {
     return this.skills;
   }
+}
+
+class Volunteer extends Student {
+
 }
 
 const student1 = new Student("Shahzaib", 249);

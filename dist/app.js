@@ -30,13 +30,14 @@ class Student {
         // below is shorthand initialization- a technique provided by TS itself
         this.skills = [];
     }
-    // ---------------------------------------------
     addSkills(skill) {
         this.skills.push(skill);
     }
     getSkills() {
         return this.skills;
     }
+}
+class Volunteer extends Student {
 }
 const student1 = new Student("Shahzaib", 249);
 student1.addSkills("Software");
