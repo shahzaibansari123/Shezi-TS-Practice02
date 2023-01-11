@@ -58,6 +58,9 @@ class Volunteer extends Student {
   constructor(name: string, rollNumber: number) {
     super(name, rollNumber);
   }
+  
+  addVolunteerSkills(skill : string){
+     this.canVolunteerIn.push(skill)
 }
 
 const student1 = new Student("Shahzaib", 249);
