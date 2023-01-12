@@ -37,15 +37,19 @@ class Student {
         return this.skills;
     }
 }
+//Inheritance
 class Volunteer extends Student {
     constructor(name, rollNumber) {
         super(name, rollNumber);
         this.canVolunteerIn = [];
     }
+    addVolunteerSkills(skill) {
+        this.canVolunteerIn.push(skill);
+    }
 }
-const student1 = new Student("Shahzaib", 249);
+const student1 = new Volunteer("Shahzaib", 249);
 student1.addSkills("Software");
-// student1.addSkills("Javascript");
+student1.addVolunteerSkills("Volunteer Attendence Marking");
 console.log(student1);
 console.log(student1.getSkills());
 //# sourceMappingURL=app.js.map

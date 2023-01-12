@@ -40,7 +40,7 @@ class Student {
 
   private skills: string[] = [];
 
-  constructor(public name: string, public rollNumber: number) {}
+  constructor(public name: string, public readonly rollNumber: number) {}
 
   addSkills(skill: string) {
     this.skills.push(skill);
@@ -50,6 +50,8 @@ class Student {
     return this.skills;
   }
 }
+
+//Inheritance
 
 class Volunteer extends Student {
 
@@ -62,10 +64,12 @@ class Volunteer extends Student {
   addVolunteerSkills(skill : string){
      this.canVolunteerIn.push(skill)
 }
+}
 
 const student1 = new Volunteer("Shahzaib", 249);
 student1.addSkills("Software");
 student1.addVolunteerSkills("Volunteer Attendence Marking");
 
 console.log(student1);
+
 console.log(student1.getSkills());
