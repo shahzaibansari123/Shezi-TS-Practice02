@@ -46,6 +46,9 @@ class Volunteer extends Student {
     addVolunteerSkills(skill) {
         this.canVolunteerIn.push(skill);
     }
+    get willVolunteerIn() {
+        return this.canVolunteerIn;
+    }
 }
 const student1 = new Volunteer("Shahzaib", 249);
 student1.addSkills("Software");

@@ -54,16 +54,19 @@ class Student {
 //Inheritance
 
 class Volunteer extends Student {
+  private canVolunteerIn: string[] = [];
 
-  canVolunteerIn: string[] = [];
-  
   constructor(name: string, rollNumber: number) {
     super(name, rollNumber);
   }
-  
-  addVolunteerSkills(skill : string){
-     this.canVolunteerIn.push(skill)
-}
+
+  addVolunteerSkills(skill: string) {
+    this.canVolunteerIn.push(skill);
+  }
+
+  get willVolunteerIn() {
+    return this.canVolunteerIn;
+  }
 }
 
 const student1 = new Volunteer("Shahzaib", 249);
