@@ -63,4 +63,6 @@ student1.addSkills("Software");
 student1.addVolunteerSkills("Volunteer Attendence Marking");
 console.log(student1);
 console.log(student1.getSkills());
+student1.willVolunteerIn = ['ABC'];
+console.log(student1.willVolunteerIn);
 //# sourceMappingURL=app.js.map
