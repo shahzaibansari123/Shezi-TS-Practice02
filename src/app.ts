@@ -69,6 +69,11 @@ class Volunteer extends Student {
   }
 
   set willVolunteerIn(skills: string[]) {
+    for (const skill of skills){
+      if(!skill){
+        return;
+      }
+    }
    this.canVolunteerIn = skills;
   }
 }
