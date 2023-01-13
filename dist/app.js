@@ -73,4 +73,16 @@
 // console.log(Volunteer.studentID);
 //-----------------------------------------------------------
 //Singleton Patterns
+// (the class should have only once object or initialization) 
+class Human {
+    constructor() {
+    }
+    static getObject() {
+        if (this.object) {
+            return this.object;
+        }
+        this.object = new Human();
+        return this.object;
+    }
+}
 //# sourceMappingURL=app.js.map
