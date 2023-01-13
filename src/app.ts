@@ -113,11 +113,13 @@
 
 class Human{
   static object: Human;
-  constructor(){
+  
+  //private constructor mesn that tha class wont be able to make an object atleast outside
+  private constructor(private name: string){
 
   }
 
-  static getObject(){
+  static getObject(name: string){
     if(this.object){
       return this.object;
     }

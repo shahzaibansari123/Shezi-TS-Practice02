@@ -75,9 +75,11 @@
 //Singleton Patterns
 // (the class should have only once object or initialization) 
 class Human {
-    constructor() {
+    //private constructor mesn that tha class wont be able to make an object atleast outside
+    constructor(name) {
+        this.name = name;
     }
-    static getObject() {
+    static getObject(name) {
         if (this.object) {
             return this.object;
         }
