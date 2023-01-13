@@ -90,5 +90,6 @@ class Human {
 const user1 = Human.getObject("Shezi");
 const user2 = Human.getObject("Rushal");
 //as you can see it will store only first value on console and you wont be able to store second one
+// as singelton will make only one object 
 console.log(user1, user2);
 //# sourceMappingURL=app.js.map
