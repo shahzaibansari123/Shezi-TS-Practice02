@@ -26,7 +26,9 @@
 
 //Classes
 
-class Student {
+//now implementing abstract class means all extended class have to define thier method in it
+
+abstract class Student {
   // name: string;
   // rollNo: number;
   // private skills: string[] = [];
@@ -42,9 +44,12 @@ class Student {
 
   constructor(public name: string, public readonly rollNumber: number) {}
 
-  addSkills(skill: string) {
-    this.skills.push(skill);
-  }
+  // addSkills(skill: string) {
+  //   this.skills.push(skill);
+  // }
+
+  //abstract method
+  abstract addSkills(skill: string): void;
 
   getSkills() {
     return this.skills;
@@ -57,7 +62,7 @@ class Volunteer extends Student {
   private canVolunteerIn: string[] = [];
 
   //static Method
-  static studentID: string = "abc-123"
+  static studentID: string = "abc-123";
 
   constructor(name: string, rollNumber: number) {
     super(name, rollNumber);
@@ -67,6 +72,9 @@ class Volunteer extends Student {
     this.canVolunteerIn.push(skill);
   }
 
+  // calling abstract method in child  or extended class
+  addSkills() {}
+
   //getter & setter
 
   get willVolunteerIn() {
@@ -74,24 +82,24 @@ class Volunteer extends Student {
   }
 
   set willVolunteerIn(skills: string[]) {
-    for (const skill of skills){
-      if(!skill){
+    for (const skill of skills) {
+      if (!skill) {
         return;
       }
     }
-   this.canVolunteerIn = skills;
+    this.canVolunteerIn = skills;
   }
 }
 
 const student1 = new Volunteer("Shahzaib", 249);
 
-student1.addSkills("Software");
+// student1.addSkills("Software");
 student1.addVolunteerSkills("Volunteer Attendence Marking");
 
 console.log(student1);
 console.log(student1.getSkills());
 
-student1.willVolunteerIn =['ABC'];
+student1.willVolunteerIn = ["ABC"];
 console.log(student1.willVolunteerIn);
 
-console.log(Volunteer.studentID)
+console.log(Volunteer.studentID);

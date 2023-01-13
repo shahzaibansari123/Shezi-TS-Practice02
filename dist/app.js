@@ -16,6 +16,7 @@
 //log("hello")
 //.......................................
 //Classes
+//now implementing abstract class means all extended class have to define thier method in it
 class Student {
     constructor(name, rollNumber) {
         this.name = name;
@@ -30,9 +31,6 @@ class Student {
         // below is shorthand initialization- a technique provided by TS itself
         this.skills = [];
     }
-    addSkills(skill) {
-        this.skills.push(skill);
-    }
     getSkills() {
         return this.skills;
     }
@@ -46,6 +44,8 @@ class Volunteer extends Student {
     addVolunteerSkills(skill) {
         this.canVolunteerIn.push(skill);
     }
+    // calling abstract method in child  or extended class
+    addSkills() { }
     //getter & setter
     get willVolunteerIn() {
         return this.canVolunteerIn;
@@ -62,11 +62,11 @@ class Volunteer extends Student {
 //static Method
 Volunteer.studentID = "abc-123";
 const student1 = new Volunteer("Shahzaib", 249);
-student1.addSkills("Software");
+// student1.addSkills("Software");
 student1.addVolunteerSkills("Volunteer Attendence Marking");
 console.log(student1);
 console.log(student1.getSkills());
-student1.willVolunteerIn = ['ABC'];
+student1.willVolunteerIn = ["ABC"];
 console.log(student1.willVolunteerIn);
 console.log(Volunteer.studentID);
 //# sourceMappingURL=app.js.map
