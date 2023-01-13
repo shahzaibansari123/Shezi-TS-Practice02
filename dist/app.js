@@ -46,6 +46,7 @@ class Volunteer extends Student {
     addVolunteerSkills(skill) {
         this.canVolunteerIn.push(skill);
     }
+    //getter & setter
     get willVolunteerIn() {
         return this.canVolunteerIn;
     }
@@ -58,6 +59,8 @@ class Volunteer extends Student {
         this.canVolunteerIn = skills;
     }
 }
+//static Method
+Volunteer.studentID = "abc-123";
 const student1 = new Volunteer("Shahzaib", 249);
 student1.addSkills("Software");
 student1.addVolunteerSkills("Volunteer Attendence Marking");
@@ -65,4 +68,5 @@ console.log(student1);
 console.log(student1.getSkills());
 student1.willVolunteerIn = ['ABC'];
 console.log(student1.willVolunteerIn);
+console.log(Volunteer.studentID);
 //# sourceMappingURL=app.js.map

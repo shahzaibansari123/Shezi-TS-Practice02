@@ -56,6 +56,9 @@ class Student {
 class Volunteer extends Student {
   private canVolunteerIn: string[] = [];
 
+  //static Method
+  static studentID: string = "abc-123"
+
   constructor(name: string, rollNumber: number) {
     super(name, rollNumber);
   }
@@ -63,6 +66,8 @@ class Volunteer extends Student {
   addVolunteerSkills(skill: string) {
     this.canVolunteerIn.push(skill);
   }
+
+  //getter & setter
 
   get willVolunteerIn() {
     return this.canVolunteerIn;
@@ -88,3 +93,5 @@ console.log(student1.getSkills());
 
 student1.willVolunteerIn =['ABC'];
 console.log(student1.willVolunteerIn);
+
+console.log(Volunteer.studentID)
